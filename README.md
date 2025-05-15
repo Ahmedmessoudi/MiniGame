@@ -62,25 +62,30 @@ g++ -std=c++17 -I/path/to/SFML/include ../src/*.cpp \
     -o Pong \
     -L/path/to/SFML/lib -lsfml-graphics -lsfml-window -lsfml-system
 ```
+## 🎮 Controls
+
+| **Paddle**        | **Up** | **Down** |
+| :---------------- | :----: | :------: |
+| 🟦 **Left Paddle**  | `W`    | `S`      |
+| 🟥 **Right Paddle** | `↑`    | `↓`      |
+| ⏹️ **Quit Game**    | —      | `Esc`    |
+
 ---
 
-Paddle|	Up Key	|Down Key
-Left |	W	 |S
-Right |	↑ (Up)	| ↓ (Down)
-Quit Game|	Esc
+## 📂 Project Structure
 
----
+```text
+📁 MiniGame/
+├── ⚙️  CMakeLists.txt           # Build configuration
+├── 📂  src/                     # Source code
+│   ├── 📄  main.cpp
+│   ├── 📄  Paddle.cpp
+│   ├── 📄  Ball.cpp
+│   └── … 
+├── 📂  include/                 # Header files
+│   ├── 📄  Paddle.h
+│   ├── 📄  Ball.h
+│   └── … 
+├── 🎨  assets/                  # (Optional) textures, fonts, etc.
+└── 📄  README.md                # ← You are here
 
-MiniGame/
-├── CMakeLists.txt      # Build configuration
-├── src/                # Source code
-│   ├── main.cpp
-│   ├── Paddle.cpp
-│   ├── Ball.cpp
-│   └── …
-├── include/            # Header files
-│   ├── Paddle.h
-│   ├── Ball.h
-│   └── …
-├── assets/             # (Optional) textures, fonts, etc.
-└── README.md           # ← You are here
